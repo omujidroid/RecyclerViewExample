@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_main"
+        style="@style/LayoutStyle"
+        >
+
+        <RelativeLayout
+            style="@style/LayoutStyle"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                tools:src="@drawable/kucing"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_indonesian"
+                style="@style/MainView"
+                android:layout_toRightOf="@id/iv_picture"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                tools:text="Kucing"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_latin"
+                style="@style/MainView"
+                android:layout_toRightOf="@id/iv_picture"
+                android:layout_below="@id/tv_name_indonesian"
+                android:textSize="25sp"
+                tools:text="Felis catus"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
